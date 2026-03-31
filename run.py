@@ -1,4 +1,4 @@
-    # script principal
+# script principal
 
 from pathlib import Path
 import subprocess, sys
