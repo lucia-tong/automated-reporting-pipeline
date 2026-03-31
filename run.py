@@ -1,4 +1,4 @@
-# script principal: ejecuta el flujo completo
+    # script principal
 
 from pathlib import Path
 import subprocess, sys
