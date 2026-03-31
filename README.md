@@ -1,6 +1,6 @@
 # Automated Reporting Pipeline
 
-Un script en python para automatizar el reporte de ventas de retail. Sirve para no tener que procesar a mano el csv cada que toca ver las métricas del mes.
+Un script en python para automatizar el reporte de ventas de retail. 
 
 ## qué hace
 
