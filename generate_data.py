@@ -1,4 +1,4 @@
-# genera datos sintéticos de ventas retail para probar el pipeline
+# generación de datos de prueba
 
 import pandas as pd
 import numpy as np
