@@ -1,42 +1,51 @@
 # Automated Reporting Pipeline
 
-Un script en python para automatizar el reporte de ventas de retail. 
+A Python-based script designed to automate retail sales reporting. This tool streamlines the end-to-end process from raw data ingestion to the generation of business-ready insights.
 
-## qué hace
+## Key Features
 
-* limpia y prepara los datos de ventas del csv
-* calcula facturación total, ticket medio, crecimiento mensual y descuento medio
-* identifica los productos, tiendas y categorías con mejor rendimiento
-* saca 4 gráficos automáticos para el reporte
-* exporta un excel con 6 pestañas a `outputs/`
+* Data Preparation: Cleans and preprocesses raw sales data from CSV files.
 
-## estructura
+* KPI Calculation: Computes total revenue, average ticket size, Month-over-Month (MoM) growth, and average discount rates.
+
+* Performance Tracking: Identifies top-performing products, stores, and categories.
+
+* Visual Analytics: Automatically generates 4 charts for the final report.
+
+* Multi-Tab Export: Produces a comprehensive Excel workbook with 6 dedicated tabs, saved to the outputs/ directory.
+
+## Project Structure
 
 ```
 automated-reporting-pipeline/
-├── run.py             # script principal: ejecuta el flujo completo
-├── pipeline.py        # procesamiento de datos y métricas
-├── generate_data.py   # crea un csv de ventas sintético para probar
+├── run.py             # Main entry point: executes the full workflow
+├── pipeline.py        # Core data processing and metric logic
+├── generate_data.py   # Utility to create synthetic sales data for testing
 └── requirements.txt
 ```
 
-## cómo ejecutarlo
+## Installation & Usage
 
 ```bash
 pip install -r requirements.txt
 python run.py
 ```
 
-si no existe `data/sales.csv` se genera automáticamente al ejecutar.
+Note: If data/sales.csv is not present, the script will automatically generate a sample dataset.
 
-## kpis que calcula
+## Core KPIs
+The script automates the tracking of several critical business metrics:
 
-* facturación total y por periodo
-* ticket medio por transacción
-* crecimiento mes a mes (mom)
-* descuento medio aplicado
-* ranking de tiendas, productos y categorías
+* Total Revenue: Aggregate sales and revenue broken down by time period.
 
-## stack
+* Average Ticket: The mean transaction value per customer.
 
-python · pandas · numpy · matplotlib · openpyxl
+* MoM Growth: Percentage change in revenue compared to the previous month.
+
+* Average Discount: The mean percentage of discount applied across transactions.
+
+* Rankings: Performance leaderboards for stores, products, and categories.
+
+## Tech Stack
+
+Python · Pandas · NumPy · Matplotlib · OpenPyXL
